@@ -49,7 +49,7 @@ const handleReset=()=>{
         <button onClick={AddInputs} className="p-2 w-1/3 h-12 border-2 border-black rounded-md bg-green-200 hover:bg-green-400">Add</button>
         <div className=" p-2 min-w-52 h-24 border-2 border-black rounded-md bg-white">{displayValue}</div>
         </div>
-       <div className="flex justify-center p-2 mt-4">
+       <div className="flex justify-center p-2 ">
        <button onClick={handleReset} className="p-2 w-1/3 h-12 border-2 border-black rounded-md text-white bg-black/60 hover:bg-black/90">Reset</button>
        </div>
       
