@@ -26,8 +26,11 @@ const App = () => {
 
   return (
     <div className="m-1 h-screen flex justify-center items-center  ">
-      <div className=" p-2 h-1/2 min-w-1/4 border-2  border-black rounded-2xl flex flex-col  items-center bg-blue-300">
+      <div className=" p-2 h-1/2 min-w-1/4 border-2  border-black rounded-2xl flex flex-col  items-center bg-blue-300 relative">
         <div className="count-box   text-center p-12 text-5xl"> {count}</div>
+        <h1 className="text-5xl absolute bottom-6 p-3 text-white opacity-15 font-semibold">
+          Simple Counter App
+        </h1>
         <div className=" flex justify-around gap-5">
           <button
             onClick={increaseCount}
@@ -35,7 +38,6 @@ const App = () => {
             {" "}
             Increase
           </button>
-
           <button
             onClick={decreaseCount}
             className="dic h-12 w-24 border-2 rounded-xl  border-red-600 p-2  bg-red-300/50 hover:bg-red-400/50 order-last">
